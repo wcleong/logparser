@@ -1,0 +1,3 @@
+boto3==1.7.75
+botocore==1.10.75
+futures==3.2.0
