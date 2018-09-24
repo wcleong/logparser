@@ -13,9 +13,9 @@ To get the best experience, it is recommended to run logparser from a virtualenv
 ```
 mkvirtualenv logparser
 
-git clone git@github.com:wcleong/bluelabscodesample.git
+git clone git@github.com:wcleong/logparser.git
 
-cd bluelabscodesample
+cd logparser
 
 pip install .
 ```

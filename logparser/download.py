@@ -75,7 +75,9 @@ def get_prefix_format(dt):
     region = 'us-east-1'
     alb_name = 'alb.name.id'
     datetime_object = datetime.strptime(dt, '%Y%m%dT%H%MZ')
-    return s3prefix_format.format(month=datetime_object.strftime('%d'), account=account, region=region, alb_name=alb_name, timestamp=dt)
+    return s3prefix_format.format(
+        month=datetime_object.strftime('%d'),
+        account=account, region=region, alb_name=alb_name, timestamp=dt)
 
 
 def get_prefix_list(dts):

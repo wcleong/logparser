@@ -91,8 +91,13 @@ def get_max_processing_times_by_url(urls, download_dir, files):
                             max_target_processing_time = float(fields[6])
                         if float(fields[7]) > max_resp_processing_time:
                             max_resp_processing_time = float(fields[7])
-        result.append((url[0], str(url[1]), str(url[2]), str(max_req_processing_time), str(
-            max_target_processing_time), str(max_resp_processing_time)))
+        result.append(
+            (url[0],
+             str(url[1]),
+             str(url[2]),
+             str(max_req_processing_time),
+             str(max_target_processing_time),
+             str(max_resp_processing_time)))
     # result is a list of tuples (url,request_count,top_status_code,max_req_processing_time,max_target_processing_time,max_resp_processing_time)
     return result
 
